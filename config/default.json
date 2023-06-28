@@ -1,0 +1,44 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 50,
+    "max": 75
+  },
+  "cors": [
+    "http://176.99.11.24",
+    "http://89.108.64.56",
+    "http://192.168.1.6:8080",
+    "http://192.168.1.6",
+    "http://192.168.1.5:8080",
+    "http://localhost:8080",
+    "http://127.0.0.1:8080"
+  ],
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "kv83ad3wnGuQqdLQzReK28N0avU=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://jivoclub.ru",
+      "issuer": "jivoclub",
+      "algorithm": "HS256",
+      "expiresIn": "3d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "postgres": "postgres://galaxy:galaxy12@127.0.0.1:5432/galaxy",
+  "firebase": {
+    "messagingKey": "AAAAU0sX3EE:APA91bHVIu5ToASnUxv8r6yxLL-SDBPXDOqhmq1B5TRoyJ72MBkTrKzSPVIEoUm9HXK3owDvgfYd60aQ5afvAubAquqHLKF0rc7FL-uebS5NdREOxQOm4I0sobi9SP41TNMPbi_mGjhr"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "name": "server",
+  "description": "galaxy chat server",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "borkowsky",
+    "email": "alternativ1994@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.3",
+    "@feathersjs/authentication-local": "^4.5.4",
+    "@feathersjs/authentication-oauth": "^4.5.4",
+    "@feathersjs/configuration": "^4.5.3",
+    "@feathersjs/errors": "^4.5.3",
+    "@feathersjs/express": "^4.5.4",
+    "@feathersjs/feathers": "^4.5.3",
+    "@feathersjs/socketio": "^4.5.4",
+    "@feathersjs/transport-commons": "^4.5.3",
+    "canvas": "^2.6.1",
+    "compression": "^1.7.4",
+    "connect-busboy": "0.0.2",
+    "cors": "^2.8.5",
+    "crypto-random-string": "^3.2.0",
+    "exif-reader": "^1.0.3",
+    "feathers-permissions": "^1.1.0",
+    "feathers-sequelize": "^6.2.0",
+    "helmet": "^3.23.3",
+    "merge-images": "^1.2.0",
+    "node-cache": "^5.1.2",
+    "node-pre-gyp": "^0.15.0",
+    "nodemailer": "^6.4.10",
+    "pg": "^8.2.1",
+    "readimage": "^1.1.1",
+    "sanitize-html": "^1.27.1",
+    "sequelize": "^5.22.3",
+    "serve-favicon": "^2.5.0",
+    "sharp": "^0.23.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "eslint": "^6.8.0",
+    "mocha": "^6.2.3",
+    "nodemon": "^2.0.4"
+  }
+}
